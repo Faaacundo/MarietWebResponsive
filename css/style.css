@@ -119,24 +119,26 @@ Main Components
   transform: translateY(50px);
 }
 .menu a {
+    
   display: block;
   height: 50px;
   line-height: 50px;
   padding-left: 5%;
-    background-color: rgba(21,27,23,.8);
-//  background:#21272c;
-  border-top: 1px solid #333c44;
+  background-color: rgba(21,27,23,.8);
+//background:#21272c;
+//border-top: 1px solid #333c44;
   color:rgb(218, 218, 218);
   transition: all 200ms;
   transform: scale(1);
 }
 
 .menu a:hover{
+  margin-bottom: 2.1px;
   transform: scale(1.05);
   color:white;
-  outline: 1px solid rgba(212, 68, 87, 0.85);
+  outline: 1.2px solid rgba(212, 68, 87, 1);
   background-color: #21272c;
-  border-radius: 10px;
+   box-shadow: 0 3px 3px #111;
 }
 
 .menu a:active {
@@ -887,7 +889,6 @@ height: auto;
         max-width: 1100px;
         margin: auto;
         overflow: hidden;
-        border:2px solid green;
 }
 		#Contacto .ladoIzquierdo { margin-left: 5px; width: 48.2%; float: left;  }
 		#Contacto .ladoIzquierdo p { padding: 0px; margin: 0px 0px 25px 0px;  }
@@ -933,14 +934,9 @@ height: auto;
             background: rgba(235, 54, 78, 1);
             color: #fff;
         }
-		#Contacto .ladoIzquierdo .button:active {  box-shadow: inset 1px 1px 5px rgba(1,1,1,.8); }
-		#Contacto .ladoDerecho { padding-top: 12px; width: 48.18%; float: right; text-align: center;}
-		#Contacto .ladoDerecho h3 {   font-size: 2em;
-      text-shadow: .5px 1px 3px black;
-      text-align: center;
-      text-transform: uppercase;
-      width: 100%;
-      margin: 1.5em 0 0 0;
+    #Contacto .ladoIzquierdo .button:active {  box-shadow: inset 1px 1px 5px rgba(1,1,1,.8); }
+    #Contacto .ladoDerecho { padding-top: 12px; width: 48.18%; float: right; text-align: center;}
+    #Contacto .ladoDerecho h3 {   font-size: 2em;text-shadow: .5px 1px 3px black;text-align: center;text-transform:uppercase; width:100%; margin: 1.5em 0 0 0;
     }
     #Contacto .ladoDerecho address { text-shadow: 0px .5px 1.5px #151515; font-size: 15px; color: #ebedf1; font-family: 'Open Sans', sans-serif; font-weight: 400; font-style: normal; left 4px no-repeat; line-height: 24px;}
 
@@ -950,7 +946,11 @@ height: auto;
   background-color: red;
 }
 
-footer p{
+footer{
+    height: 20px;
+}
+footer p{ 
+    margin: 8px;
     font-size:.8em;
     text-align: center;
     color:grey;
